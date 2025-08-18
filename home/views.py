@@ -4,3 +4,6 @@ def homepage_view(request):
         'restaurant_name': 'Spice Symphony'
     }
     return render(request, 'homepage.html', context)
+
+def contact_view(request):
+    return render(request, 'home/contact.html')
