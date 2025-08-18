@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>{{ restaurant_name }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
     <h1>Welcome to {{ restaurant_name}}!</h1>
