@@ -7,3 +7,6 @@ def homepage_view(request):
 
 def contact_view(request):
     return render(request, 'home/contact.html')
+
+def reservations(request):
+    return render(request, 'reservations.html')
