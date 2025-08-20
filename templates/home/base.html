@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}My Website{% endlock %}
+    </title>
+    <style>
+        body{
+         margin:0;
+         font-family:Arial, sans-serif;
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+        }
+        main {
+         flex:1;
+         padding:20px;
+        }
+        footer{
+         background-color: #222;
+         color: #fff;
+         text=align: center;
+         padding: 12px;
+         font-size: 14px;
+         margin-top: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- page content -->
+    <main>
+        {% block content %}
+        {% endlock %}
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        &copy;{{current_year}} My Restaurant.All rights reserved.
+    </footer>
+</body>
+</html>
+    
