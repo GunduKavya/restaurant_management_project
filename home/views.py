@@ -14,6 +14,8 @@ def reservations(request):
         'current-year': datetime.now().year
     }
     return render(request, 'reservations.html', context)
+def home(request):
+    return render(request, 'home.html')
 
 
 
